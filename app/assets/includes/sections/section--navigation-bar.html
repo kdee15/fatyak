@@ -1,0 +1,50 @@
+<nav class="nav-bar">
+    
+    <div class="container">
+        
+        <ul class="grid">
+            <li class="grid__quarters">
+                <a ui-sref="communicator">
+                    <figure class="nav-bar__icon">
+                        <div class="nav-bar__icon-content">
+                            <ng-include src="'assets/includes/icons/icon--messages.html'"></ng-include>
+                        </div>
+                    </figure>
+                    <span class="nav-bar__text">Messages/Alerts</span>
+                </a>
+            </li>
+            <li class="grid__quarters">
+                <a ui-sref="teams">
+                    <figure class="nav-bar__icon">
+                        <div class="nav-bar__icon-content">
+                            <ng-include src="'assets/includes/icons/icon--teamLists.html'"></ng-include>
+                        </div>
+                    </figure>
+                    <span class="nav-bar__text">Team Lists</span>
+                </a>
+            </li>
+            <li class="grid__quarters">
+                <a ui-sref="calendar">
+                    <figure class="nav-bar__icon">
+                        <div class="nav-bar__icon-content">
+                            <ng-include src="'assets/includes/icons/icon--calendar.html'"></ng-include>
+                        </div>
+                    </figure>
+                    <span class="nav-bar__text">Events &amp; Scores</span>
+                </a>
+            </li>
+            <li class="grid__quarters">
+                <a ui-sref="admin">
+                    <figure class="nav-bar__icon">
+                        <div class="nav-bar__icon-content">
+                            <ng-include src="'assets/includes/icons/icon--admin.html'"></ng-include>
+                        </div>
+                    </figure>
+                    <span class="nav-bar__text">Admin</span>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+    
+</nav>

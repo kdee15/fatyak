@@ -1,0 +1,10 @@
+<aside class="message success" ng-if=" notify == 'success' ">
+    <p><strong>Hurrah:</strong> We have successfully processed your request!</p>
+</aside>
+
+<aside class="message error" ng-if="notify == 'error'">
+    <p ng-if="customMessage == undefined || customeMessage == ''"><strong>Error:</strong> We couldn't process the request. Please try again in a few minutes, or give the administrators a call!</p>
+    <p ng-if="customMessage"><strong>Error:</strong> {{ customMessage }}</p>
+</aside>
+
+<div class="loader" ng-if="status == 'busy' || notify == 'busy'"></div>

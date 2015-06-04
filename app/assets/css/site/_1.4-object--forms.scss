@@ -1,0 +1,146 @@
+// 1. OBJECT [ 1.4. FORMS ]  ##########################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+form {
+    
+    margin-bottom: 0;   
+    
+}
+
+
+label {
+
+    margin: 0 auto;
+
+    .label__image {
+
+        width: 100%;
+        margin-bottom: -$baseline-small;
+
+    }
+
+}
+
+.field-item {
+    
+    margin-bottom: 0 !important;   
+    
+}
+
+.yak-textfield {
+    
+    border: 0;
+    font-size: $large;
+    font-weight: bold;
+    color: $white;
+    text-align: center;
+    width: 80% !important;
+    margin: 0 auto;
+    
+}
+
+.yak-textfield {
+    
+    background: url('../images/site/input-email__bg.png') no-repeat;
+    background-size: 100% auto;
+}
+
+#input__name {
+    
+    background: url('../images/site/input-name__bg.png') no-repeat;
+    background-size: 100% auto;
+    
+}
+
+#input__email {
+    
+    background: url('../images/site/input-email__bg.png') no-repeat;
+    background-size: 100% auto;
+}
+
+.figure__button {
+
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+
+    a {
+        
+        display: block;
+
+        .button {
+
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+    }
+}
+
+ul {
+    
+    margin: 0;
+    padding: 0;
+    
+    li {
+        
+        line-height: 0;   
+        
+    }
+}
+
+.beer__button {
+    
+    width: 100%;
+    margin: 0 auto;
+    
+    img {
+
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

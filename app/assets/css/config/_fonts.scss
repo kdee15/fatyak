@@ -1,0 +1,25 @@
+// CONFIGURATION LAYER [FONTS & STACKS] ##############################################
+		
+		
+	// B. FONT STACKS ++++++++++++++++++++++++++++++++++++++++++++++++
+
+		// B.1 Helvetica Font Stack
+		$roboto: 	'Roboto', Helvetica, Arial, sans-serif;
+
+	// C. FONT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++
+
+		$base-font:			$roboto; // Change your default font type.
+		$base-size: 		16px; 		// Choose your base font size. I like 16px and Relative Readability.
+		$baseline: 			24px; 		// Choose your Line Height.
+		
+	// D. FONT SIZING ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+		$xx-large:			4em; 		// 32px
+		$x-large:			2em; 		// 32px
+		$large:				1.5em; 		// 24px
+		$medium:			1.125em; 	// 18px
+		$normal:			1em; 		// 16px
+		$small:				0.75em; 	// 12px
+		$x-small:			0.625em; 	// 10px
+
+// END OF FILE  ##############################################

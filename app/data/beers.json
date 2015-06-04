@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1, 
+        "linkImage": "assets/images/site/beer-button__ipa.png",
+        "beerName": "IPA"
+    },
+    
+    {
+        "id": 2, 
+        "linkImage": "assets/images/site/beer-button__xpa.png",
+        "beerName": "XPA"
+    },
+    
+    {
+        "id": 3, 
+        "linkImage": "assets/images/site/beer-button__sour-ale.png",
+        "beerName": "Sour Ale"
+    },
+    
+    {
+        "id": 4, 
+        "linkImage": "assets/images/site/beer-button__golden-ale.png",
+        "beerName": "Golden Ale"
+    },
+    
+    {
+        "id": 5, 
+        "linkImage": "assets/images/site/beer-button__blonde-ale.png",
+        "beerName": "Blonde Ale"
+    },
+    
+    {
+        "id": 6, 
+        "linkImage": "assets/images/site/beer-button__pacific-ale.png",
+        "beerName": "Pacific Ale"
+    },
+    
+    {
+        "id": 7, 
+        "linkImage": "assets/images/site/beer-button__amber-ale.png",
+        "beerName": "Amber Ale"
+    },
+    
+    {
+        "id": 8, 
+        "linkImage": "assets/images/site/beer-button__flavoured.png",
+        "beerName": "Flavoured Ale"
+    },
+        
+    {
+        "id": 9, 
+        "linkImage": "assets/images/site/beer-button__own.png",
+        "beerName": "Own"
+    },
+    
+]
