@@ -21,13 +21,13 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: 'partials/landing.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
     
         .state('register', {
             url: '/register',
             templateUrl: 'partials/1__register.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
         
         .state('beer-style', {
@@ -45,13 +45,13 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
         .state('beer-name', {
             url: '/beer-name',
             templateUrl: 'partials/4__beer-name.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
                     
         .state('beer-bottle', {
             url: '/beer-bottle',
             templateUrl: 'partials/5__beer-bottle.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
     
     });

@@ -24,8 +24,8 @@
 
                 </label>
 
-                <input type="text" class="yak-textfield" id="input__name" ng-model="" name="name" required>
-
+                <input type="text" class="yak-textfield" id="input__name" ng-model="user.name" required>
+                {{ form.name }}
             </div>
 
             <div class="field-item text">
@@ -36,15 +36,15 @@
 
                 </label>
 
-                <input type="text" class="yak-textfield" id="input__email" ng-model="" name="email" required>
-
+                <input type="text" class="yak-textfield" id="input__email" ng-model="user.email" name="email" required>
+                {{ form.email }}
             </div>
 
             <figure class="figure__button">
 
-                <a href="#/beer-style">
+                <button ng-click="bouForm()">
                     <img src="assets/images/site/button__next.png" class="button" />
-                </a>
+                </button>
 
             </figure>
 

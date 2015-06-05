@@ -44,13 +44,13 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/home',
             templateUrl: 'partials/landing.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
     
         .state('register', {
             url: '/register',
             templateUrl: 'partials/1__register.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
         
         .state('beer-style', {
@@ -68,13 +68,13 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
         .state('beer-name', {
             url: '/beer-name',
             templateUrl: 'partials/4__beer-name.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
                     
         .state('beer-bottle', {
             url: '/beer-bottle',
             templateUrl: 'partials/5__beer-bottle.html',
-            controller: ''
+            controller: 'yakListCtrl'
         })
     
     });
@@ -97,6 +97,32 @@ var yakControllers = angular.module('yakControllers', []);
 yakControllers.controller('yakListCtrl', ['$scope', '$http',
   function($scope, $http) {
       
+      console.log('hello');
+      
+    //A.3. STEPS ----------------------------------------------------------------------------------------------
+
+      $scope.step = 1;
+
+    //A.3. END --------------------------------------------------------------------------------------------------------
+      
+    //A.3. BUILD OBJECT ----------------------------------------------------------------------------------------------
+
+      $scope.form = {};
+      $scope.form.name = '';
+       $scope.form.email = '';
+      
+      console.log($scope.form);
+      
+      $scope.user = {};
+       $scope.user.name = '';
+       $scope.user.email = '';
+        $scope.beer = {};
+       $scope.beer.style = '';
+       $scope.beer.logo = '';
+       $scope.beer.name ='';
+
+    //A.3. END --------------------------------------------------------------------------------------------------------  
+      
     //A.1. YAK HEAD LOGO DATA -----------------------------------------------------------------------------------------  
       
     $http.get('data/yaks.json').success(function(data) {
@@ -117,15 +143,56 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
     //A.2. END --------------------------------------------------------------------------------------------------------
       
-    //A.3. ADD BEER NAME ----------------------------------------------------------------------------------------------
-      
-      
-      
-    //A.3. END --------------------------------------------------------------------------------------------------------   
-      
     //A.4. ADD USER DETAILS -------------------------------------------------------------------------------------------
       
+      $scope.bouForm = function() {
       
+        
+        var formObject = {
+        
+            "person" : {
+
+                "name" : $scope.user.name,
+                "email" : $scope.user.email
+
+            },
+            "theBeer" : {
+            
+                "style" : $scope.beer.style,
+                "logo" : $scope.beer.logo,
+                "name" : $scope.beer.name
+        
+            }
+        
+        }
+        
+        console.log(formObject);
+      
+      }
+      
+      /*
+      $scope.endObject = {
+      
+          "person" : {
+          
+                "name" : user.name,
+                "email" : user.email
+          
+          },
+          
+          "theBeer" : {
+          
+                "style" : beer.style,
+                "logo" : beer.logo,
+                "name" : beer.name
+           
+          }
+      
+      };
+      
+      console.log($scope.endObject);
+      
+      */
       
     //A.4. END --------------------------------------------------------------------------------------------------------   
       
