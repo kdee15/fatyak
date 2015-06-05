@@ -8,17 +8,15 @@
 
 // A. SCRIPT NAME +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
+// app.js
 var yakApp = angular.module('yakApp', [
-    'ngRoute',
+    
     'ngAnimate',
     'ui.router',
     'yakControllers',
     'phonecatControllers'
-]);
-
-
-
+                                      
+]); 
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -33,60 +31,53 @@ var yakApp = angular.module('yakApp', [
 
 // A. SCRIPT NAME +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-yakApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-    
-      when('/', {
-        templateUrl: 'partials/landing.html',
-        controller: 'PhoneListCtrl'
-      }).
 
-      when('/register', {
-        templateUrl: 'partials/register.html',
-        controller: 'PhoneListCtrl'
-      }).
 
-      when('/beer-style', {
-        templateUrl: 'partials/yak-beer-style.html',
-        controller: 'PhoneListCtrl'
-      }).
-
-      when('/yak-head', {
-        templateUrl: 'partials/yak-head.html',
-        controller: 'yakListCtrl'
-      }).
-
-      when('/beer-name', {
-        templateUrl: 'partials/yak-beer-name.html',
-        controller: 'yakListCtrl'
-      }).
+yakApp.config(function($stateProvider, $urlRouterProvider) {
     
-      when('/beer-name/:yakId', {
-        templateUrl: 'partials/yak-beer-name.html',
-        controller: 'yakListCtrl'
-      }).
+    $urlRouterProvider.otherwise('/home');
     
-      when('/beer-bottle', {
-        templateUrl: 'partials/yak-beer-bottle.html',
-        controller: 'yakListCtrl'
-      }).
+    $stateProvider
+        
+        // HOME STATES AND NESTED VIEWS ========================================
     
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
+        .state('home', {
+            url: '/home',
+            templateUrl: 'partials/landing.html',
+            controller: ''
+        })
     
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
-      }).
+        .state('register', {
+            url: '/register',
+            templateUrl: 'partials/register.html',
+            controller: ''
+        })
+        
+        .state('beer-style', {
+            url: '/beer-style',
+            templateUrl: 'partials/yak-beer-style.html',
+            controller: ''
+        })
+            
+        .state('yak-head', {
+            url: '/yak-head',
+            templateUrl: 'partials/yak-head.html',
+            controller: 'yakListCtrl'
+        })
+                
+        .state('beer-name', {
+            url: '/beer-name',
+            templateUrl: 'partials/yak-beer-name.html',
+            controller: ''
+        })
+                    
+        .state('beer-bottle', {
+            url: '/beer-bottle',
+            templateUrl: 'partials/yak-beer-bottle.html',
+            controller: ''
+        })
     
-      otherwise({
-        redirectTo: '/partials/landing.html'
-      });
-      
-  }]);
+    });
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -1,5 +1,5 @@
 // app.js
-var routerApp = angular.module('routerApp', ['ui.router']);
+var yakApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     
