@@ -26,31 +26,31 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
     
         .state('register', {
             url: '/register',
-            templateUrl: 'partials/register.html',
+            templateUrl: 'partials/1__register.html',
             controller: ''
         })
         
         .state('beer-style', {
             url: '/beer-style',
-            templateUrl: 'partials/yak-beer-style.html',
-            controller: ''
+            templateUrl: 'partials/2__beer-style.html',
+            controller: 'yakListCtrl'
         })
             
         .state('yak-head', {
             url: '/yak-head',
-            templateUrl: 'partials/yak-head.html',
+            templateUrl: 'partials/3__yak-head.html',
             controller: 'yakListCtrl'
         })
                 
         .state('beer-name', {
             url: '/beer-name',
-            templateUrl: 'partials/yak-beer-name.html',
+            templateUrl: 'partials/4__beer-name.html',
             controller: ''
         })
                     
         .state('beer-bottle', {
             url: '/beer-bottle',
-            templateUrl: 'partials/yak-beer-bottle.html',
+            templateUrl: 'partials/5__beer-bottle.html',
             controller: ''
         })
     
