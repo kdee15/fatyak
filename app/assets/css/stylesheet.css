@@ -1815,11 +1815,11 @@ html, body {
 
 @font-face {
   font-family: 'Friz';
-  src: url("../fonts/FrizQuaBol");
+  src: url("../fonts/FrizQuadrataBold.ttf") format("truetype");
 }
 html {
   background: #EEEEEE;
-  font-family: 'Friz', sans-serif;
+  font-family: 'Friz', sans-serif, arial bold, helvetica;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1905,7 +1905,7 @@ form {
 input[type="radio"] {
   margin: 0;
   position: absolute;
-  z-index: -200;
+  z-index: -20;
 }
 
 label {
@@ -1961,6 +1961,17 @@ ul li {
   height: auto;
 }
 
+#mast .form {
+  position: relative;
+}
+#mast .form .form-panel {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+}
+
 .section-1__registration .figure__logo {
   width: 90%;
   margin: 0 auto;
@@ -1993,29 +2004,96 @@ ul li {
   opacity: 0.6;
 }
 
-.section-2__beer-logo .grid {
+.section-3__beer-logo .grid {
   margin-left: 0 !important;
 }
-.section-2__beer-logo .grid .grid__half {
+.section-3__beer-logo .grid .grid__half {
   position: relative;
   padding-left: 0 !important;
   overflow: hidden;
 }
-.section-2__beer-logo .next {
+.section-3__beer-logo .next {
   margin-top: -27px;
 }
 
-.page-name .figure__yak-head {
+.section-4__beer-name .figure__yak-head {
   width: 40%;
   margin: 0 auto;
   margin-bottom: 24px;
 }
-.page-name .figure__yak-head .yak-head {
+.section-4__beer-name .figure__yak-head .yak-head {
   width: 100%;
   height: auto;
 }
-.page-name .yak-beer {
+.section-4__beer-name .yak-beer {
   opacity: 0.6;
+}
+
+.section-5__beer-bottle {
+  position: relative;
+  background: url("../images/site/beer-bg.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+.section-5__beer-bottle .figure__bottle {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.section-5__beer-bottle .figure__bottle:before {
+  content: "";
+  display: block;
+  padding-top: 165%;
+}
+.section-5__beer-bottle .figure__bottle .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.section-5__beer-bottle .figure__bottle .content .bottle-neck-logo {
+  width: 32px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+.section-5__beer-bottle .figure__bottle .content .bottle-lable-logo {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 205px;
+}
+.section-5__beer-bottle .figure__bottle .content .image__bottle {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.section-5__beer-bottle .figure__bottle .content p {
+  font-family: 'Friz', sans-serif, arial bold, helvetica;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+}
+.section-5__beer-bottle .figure__bottle .content .bottle-beer-name {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.7;
+}
+.section-5__beer-bottle .figure__bottle .figure__button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.section-5__beer-bottle .figure__yak-text {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-5__beer-bottle .figure__yak-text .yak-text {
+  width: 100%;
+  height: auto;
 }
 
 body {
@@ -2074,34 +2152,4 @@ body .figure__yak-text .yak-text {
   margin-top: -70px;
   position: relative;
   z-index: 1000;
-}
-
-.page-bottle .background {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("../images/site/beer-bg.jpg");
-  background-size: cover;
-  z-index: -100;
-}
-.page-bottle .figure__bottle {
-  margin: 0;
-}
-.page-bottle .figure__bottle img {
-  width: 100%;
-}
-.page-bottle .figure__bottle .figure__button {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.page-bottle .figure__yak-text {
-  width: 100%;
-  margin: 0 auto;
-}
-.page-bottle .figure__yak-text .yak-text {
-  width: 100%;
-  height: auto;
 }

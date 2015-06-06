@@ -5,14 +5,14 @@
 @font-face {
     
   font-family: 'Friz';
-  src: url('../fonts/FrizQuaBol'); 
+  src: url('../fonts/FrizQuadrataBold.ttf') format('truetype'); 
     
 }
 
 html {
 
     background: $stj-grayLight;
-    font-family: 'Friz', sans-serif;
+    font-family: 'Friz', sans-serif, arial bold, helvetica;
 
 }
 

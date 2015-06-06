@@ -175,7 +175,7 @@
         
         <!-- C.2.3. BEER LOGO ------------------------------------------------------------------------------------- -->
 
-        <section class="form-panel section-2__beer-logo">
+        <section class="form-panel section-3__beer-logo">
         
             {{ beer.logo }}
         
@@ -212,7 +212,7 @@
         
         <!-- C.2.4. BEER STYLE ------------------------------------------------------------------------------------ -->
 
-        <section class="form-panel section-2__beer-name">
+        <section class="form-panel section-4__beer-name">
         
             <figure class="figure__yak-head">
 
@@ -222,16 +222,17 @@
 
             <div class="field-item text">
 
-                <input type="text" class="yak-textfield" id="input__beer-name" ng-model="beer.name" name="beer-name" required>
+                <input type="text" class="yak-textfield" id="input__beer-name" ng-model="beer.name" name="beer-name">
 
             </div>
 
             <figure class="figure__yak-text">
 
                 <img src="assets/images/site/yak__beer.png" class="yak-text yak-beer" />
-                {{ beer.style }} {{ beer.styleOwn }}
 
-            </figure>    
+            </figure>
+            
+            <p class="beer-style">{{ beer.style }} {{ beer.styleOwn }}</p>
 
             <figure class="figure__button">
 
@@ -252,6 +253,39 @@
         </section>
         
         <!-- C.2.4. END ------------------------------------------------------------------------------------------- -->
+        
+        <!-- C.2.5. BEER BOTTLE ----------------------------------------------------------------------------------- -->
+        
+        <section class="section-5__beer-bottle">
+        
+            <figure class="figure__bottle">
+                
+                <div class="content">
+                    
+                    <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-neck-logo" />
+
+                    <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-lable-logo" />
+
+                    <p class="bottle-beer-name">{{ beer.name }}</p>
+
+                    <p class="bottle-beer-style">{{ beer.style }} {{ beer.styleOwn }}</p>
+
+                    <img class="image__bottle" src="assets/images/site/bottle.png" />
+
+                    <figure class="figure__button">
+
+                        <a href="">
+                            <img src="assets/images/site/submit.png" class="button" />
+                        </a>
+
+                    </figure>
+                
+                </div>
+
+            </figure>
+        
+        </section>
+        <!-- C.2.5. END ------------------------------------------------------------------------------------------- -->
 
     </form>
 
