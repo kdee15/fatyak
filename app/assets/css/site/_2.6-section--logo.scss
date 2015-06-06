@@ -2,7 +2,7 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.page-yak-head {
+.section-2__beer-logo {
     
     .grid {
         
@@ -13,27 +13,7 @@
             position: relative;
             padding-left: 0 !important;
             overflow: hidden;
-            
-            input {
-                
-                margin: 0;
-                position: absolute;
-                z-index: -200;
-                
-            }
-            
-            label {
-                
-                width: 100%;
-                display: inline;
-                
-                img {
-                    
-                    width: 100%;   
-                    
-                }
-            }
-            
+
         }
     }
     

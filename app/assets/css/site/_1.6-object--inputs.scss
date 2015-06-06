@@ -1,44 +1,8 @@
-// 1. OBJECT [ 1.4. FORMS ]  ##########################################################################################
+// 1. OBJECT [ 1.6. USER INPUTS ]  ####################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-form {
-    
-    margin-bottom: 0;   
-    
-}
-
-
-label {
-
-    margin: 0 auto;
-
-    .label__image {
-
-        width: 100%;
-        margin-bottom: -$baseline-small;
-
-    }
-
-}
-
-.field-item {
-    
-    margin-bottom: 0 !important;   
-    
-}
-
-.yak-textfield {
-    
-    border: 0;
-    font-size: $large;
-    font-weight: bold;
-    color: $white;
-    text-align: center;
-    width: 80% !important;
-    margin: 0 auto;
-    
-}
+// A.1. Text Fields ---------------------------------------------------------------------------------------------------
 
 .yak-textfield {
     
@@ -59,23 +23,71 @@ label {
     background-size: 100% auto;
 }
 
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. Radio Buttons -------------------------------------------------------------------------------------------------
+
+input[type="radio"] {
+
+    margin: 0;
+    position: absolute;
+    z-index: -200;
+
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A.3. ALL FIELD LABELS ----------------------------------------------------------------------------------------------
+
+label {
+
+    width: 100% !important;
+    margin: 0 auto;
+
+    .label__image {
+
+        width: 100%;
+
+    }
+} 
+
+// A.3. END -----------------------------------------------------------------------------------------------------------
+
+
+
+.field-item {
+    
+    margin-bottom: 0 !important;   
+    
+}
+
+.yak-textfield {
+    
+    border: 0;
+    font-size: $large;
+    font-weight: bold;
+    color: $white;
+    text-align: center;
+    width: 80% !important;
+    margin: 0 auto;
+    
+}
+
+
+
 .figure__button {
 
     width: 100%;
     margin: 0 auto;
     z-index: 100;
 
-    a {
-        
+    .button {
+
+        width: 100%;
+        height: auto;
         display: block;
-
-        .button {
-
-            width: 100%;
-            height: auto;
-            display: block;
-
-        }
+        border: 0;
+        background: none;
     }
 }
 
@@ -86,7 +98,8 @@ ul {
     
     li {
         
-        line-height: 0;   
+        line-height: 0;
+        list-style-type: none;
         
     }
 }
@@ -103,7 +116,6 @@ ul {
 
     }
 }
-
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

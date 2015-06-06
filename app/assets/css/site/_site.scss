@@ -54,10 +54,13 @@
     @import	"_1.3-object--typography";
 
     // 1.4. Forms
-    @import	"_1.4-object--forms";
+    @import	"_1.4-object--form";
 
     // 1.5. Grid
     @import	"_1.5-object--grid";
+
+    // 1.6. USER INPUTS
+    @import	"_1.6-object--inputs";
 
 
 
@@ -82,6 +85,18 @@
     // 2.3. Footend
     @import	"_2.3-section--footend";
 
+    // 2.4. REGISTER
+    @import	"_2.4-section--register";
+
+    // 2.5. BEER STYLE
+    @import	"_2.5-section--style";
+
+    // 2.6. BEER LOGO
+    @import	"_2.6-section--logo";
+
+    // 2.7. BEER NAME
+    @import	"_2.7-section--name";
+
 
 // 2. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -100,20 +115,8 @@
     // 3.1. Homepage
     @import	"_3.1-page--home";
 
-    // 3.2. Dashboard
-    @import	"_3.2-page--register";
-
     // 3.3. Communicator
     @import	"_3.3-page--bottle";
-
-    // 3.6. Homepage
-    @import	"_3.4-page--name";
-
-    // 3.5. Events & Scores
-    @import	"_3.5-page--style";
-
-    // 3.6. Homepage
-    @import	"_3.6-page--yakhead";
 
 // 3. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

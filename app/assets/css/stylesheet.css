@@ -1864,15 +1864,56 @@ p {
 }
 
 form {
+  position: relative;
   margin-bottom: 0;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .form {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .form {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .form {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+.yak-textfield {
+  background: url("../images/site/input-email__bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+#input__name {
+  background: url("../images/site/input-name__bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+#input__email {
+  background: url("../images/site/input-email__bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+input[type="radio"] {
+  margin: 0;
+  position: absolute;
+  z-index: -200;
 }
 
 label {
+  width: 100% !important;
   margin: 0 auto;
 }
 label .label__image {
   width: 100%;
-  margin-bottom: -12px;
 }
 
 .field-item {
@@ -1889,33 +1930,17 @@ label .label__image {
   margin: 0 auto;
 }
 
-.yak-textfield {
-  background: url("../images/site/input-email__bg.png") no-repeat;
-  background-size: 100% auto;
-}
-
-#input__name {
-  background: url("../images/site/input-name__bg.png") no-repeat;
-  background-size: 100% auto;
-}
-
-#input__email {
-  background: url("../images/site/input-email__bg.png") no-repeat;
-  background-size: 100% auto;
-}
-
 .figure__button {
   width: 100%;
   margin: 0 auto;
   z-index: 100;
 }
-.figure__button a {
-  display: block;
-}
-.figure__button a .button {
+.figure__button .button {
   width: 100%;
   height: auto;
   display: block;
+  border: 0;
+  background: none;
 }
 
 ul {
@@ -1924,6 +1949,7 @@ ul {
 }
 ul li {
   line-height: 0;
+  list-style-type: none;
 }
 
 .beer__button {
@@ -1933,6 +1959,63 @@ ul li {
 .beer__button img {
   width: 100%;
   height: auto;
+}
+
+.section-1__registration .figure__logo {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: -70px;
+}
+.section-1__registration .figure__logo .yak-logo {
+  width: 100%;
+  height: auto;
+}
+.section-1__registration .form {
+  margin-bottom: 0;
+}
+.section-1__registration .form .yak-textfield {
+  position: relative;
+  z-index: 20;
+}
+.section-1__registration .form .button {
+  position: relative;
+  margin: -30px 0;
+  z-index: 0;
+}
+.section-1__registration .figure__text {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+.section-1__registration .figure__text .yak-text {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.section-2__beer-logo .grid {
+  margin-left: 0 !important;
+}
+.section-2__beer-logo .grid .grid__half {
+  position: relative;
+  padding-left: 0 !important;
+  overflow: hidden;
+}
+.section-2__beer-logo .next {
+  margin-top: -27px;
+}
+
+.page-name .figure__yak-head {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.page-name .figure__yak-head .yak-head {
+  width: 100%;
+  height: auto;
+}
+.page-name .yak-beer {
+  opacity: 0.6;
 }
 
 body {
@@ -1993,38 +2076,6 @@ body .figure__yak-text .yak-text {
   z-index: 1000;
 }
 
-.page-register .figure__logo {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: -70px;
-}
-.page-register .figure__logo .yak-logo {
-  width: 100%;
-  height: auto;
-}
-.page-register .form {
-  margin-bottom: 0;
-}
-.page-register .form .yak-textfield {
-  position: relative;
-  z-index: 20;
-}
-.page-register .form .button {
-  position: relative;
-  margin: -30px 0;
-  z-index: 0;
-}
-.page-register .figure__text {
-  width: 40%;
-  margin: 0 auto;
-  padding-bottom: 24px;
-}
-.page-register .figure__text .yak-text {
-  width: 100%;
-  height: auto;
-  opacity: 0.6;
-}
-
 .page-bottle .background {
   position: fixed;
   top: 0;
@@ -2053,41 +2104,4 @@ body .figure__yak-text .yak-text {
 .page-bottle .figure__yak-text .yak-text {
   width: 100%;
   height: auto;
-}
-
-.page-name .figure__yak-head {
-  width: 40%;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-.page-name .figure__yak-head .yak-head {
-  width: 100%;
-  height: auto;
-}
-.page-name .yak-beer {
-  opacity: 0.6;
-}
-
-.page-yak-head .grid {
-  margin-left: 0 !important;
-}
-.page-yak-head .grid .grid__half {
-  position: relative;
-  padding-left: 0 !important;
-  overflow: hidden;
-}
-.page-yak-head .grid .grid__half input {
-  margin: 0;
-  position: absolute;
-  z-index: -200;
-}
-.page-yak-head .grid .grid__half label {
-  width: 100%;
-  display: inline;
-}
-.page-yak-head .grid .grid__half label img {
-  width: 100%;
-}
-.page-yak-head .next {
-  margin-top: -27px;
 }

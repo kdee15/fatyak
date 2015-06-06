@@ -15,25 +15,12 @@
         </figure>
 
         <form class="form">
-            
-            <ul>
-
-                <li ng-repeat="beer in beers">
-                    <a href="" class="beer__button" id="">
-                        <img ng-src="{{ beer.linkImage }}" />
-                    </a>
-                </li>
-                
-            </ul>
-            
-        <p>hello</p>
-            
-            
-            
 
             <ul>
 
                 <li>
+                    <input type="radio" name="yak-head" id="{{yak.id}}" value="{{yak.id}}" ng-model="formData.yakHead">
+                    <label for="{{yak.id}}"><img ng-src="{{yak.imageUrl}}" /></label>
                     <a href="" class="beer__button" id="">
                         <img src="assets/images/site/beer-button__ipa.png" />
                     </a>

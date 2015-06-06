@@ -101,25 +101,27 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
     //A.3. STEPS ----------------------------------------------------------------------------------------------
 
-      $scope.step = 1;
+    $scope.step = 1;
 
     //A.3. END --------------------------------------------------------------------------------------------------------
       
     //A.3. BUILD OBJECT ----------------------------------------------------------------------------------------------
 
-      $scope.form = {};
-      $scope.form.name = '';
-       $scope.form.email = '';
-      
-      console.log($scope.form);
-      
-      $scope.user = {};
-       $scope.user.name = '';
-       $scope.user.email = '';
-        $scope.beer = {};
-       $scope.beer.style = '';
-       $scope.beer.logo = '';
-       $scope.beer.name ='';
+    $scope.form = {};
+    $scope.form.name = '';
+    $scope.form.email = '';
+    $scope.form.style = '';
+
+    console.log($scope.form);
+
+    $scope.user = {};
+        $scope.user.name = '';
+        $scope.user.email = '';
+    $scope.beer = {};
+        $scope.beer.style = '';
+        $scope.beer.styleOwn = '';
+        $scope.beer.logo = '';
+        $scope.beer.name ='';
 
     //A.3. END --------------------------------------------------------------------------------------------------------  
       
