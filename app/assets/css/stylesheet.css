@@ -1857,10 +1857,12 @@ a:hover {
 }
 
 p {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #828282;
+  font-family: 'Friz', sans-serif, arial bold, helvetica;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
 }
 
 form {
@@ -1902,6 +1904,20 @@ form {
   background-size: 100% auto;
 }
 
+.field-item {
+  margin-bottom: 0 !important;
+}
+
+.yak-textfield {
+  border: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  width: 80% !important;
+  margin: 0 auto;
+}
+
 input[type="radio"] {
   margin: 0;
   position: absolute;
@@ -1916,18 +1932,17 @@ label .label__image {
   width: 100%;
 }
 
-.field-item {
-  margin-bottom: 0 !important;
+.button {
+  padding: 0;
 }
 
-.yak-textfield {
-  border: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  width: 80% !important;
+.beer__button {
+  width: 100%;
   margin: 0 auto;
+}
+.beer__button img {
+  width: 100%;
+  height: auto;
 }
 
 .figure__button {
@@ -1950,15 +1965,6 @@ ul {
 ul li {
   line-height: 0;
   list-style-type: none;
-}
-
-.beer__button {
-  width: 100%;
-  margin: 0 auto;
-}
-.beer__button img {
-  width: 100%;
-  height: auto;
 }
 
 #mast .form {
@@ -2028,6 +2034,12 @@ ul li {
 .section-4__beer-name .yak-beer {
   opacity: 0.6;
 }
+.section-4__beer-name p {
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.5;
+  text-shadow: 0 0 300px #000;
+}
 
 .section-5__beer-bottle {
   position: relative;
@@ -2068,14 +2080,6 @@ ul li {
   top: 0;
   left: 0;
   z-index: -10;
-}
-.section-5__beer-bottle .figure__bottle .content p {
-  font-family: 'Friz', sans-serif, arial bold, helvetica;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding: 0;
 }
 .section-5__beer-bottle .figure__bottle .content .bottle-beer-name {
   font-size: 18px;
@@ -2152,4 +2156,32 @@ body .figure__yak-text .yak-text {
   margin-top: -70px;
   position: relative;
   z-index: 1000;
+}
+
+@media only screen and (max-width: 480px) {
+  #mast {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  #mast {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #mast {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #mast {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
