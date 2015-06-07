@@ -11,35 +11,30 @@
 
 html {
 
-    background: $stj-grayLight;
     font-family: 'Friz', sans-serif, arial bold, helvetica;
 
 }
 
 // A.1. HEADINGS ------------------------------------------------------------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
+    h3 {
+        
+        font-family: 'Friz', sans-serif, arial bold, helvetica;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0.7;
+        font-size: $medium;
+        margin-bottom: $baseline;
+        color: $yak-beige;
+        
+        span {
+            
+            font-size: $small;   
+            
+        }
+    }
 
-    @include font($roboto, $bold, normal);
-    color: $sub-heading
-    
-}
-
-h1, h3 {
-
-    color: $heading;
-    text-transform: uppercase;
-    margin: $baseline-medium 0;
-}
-
-h2 {
-    
-    color: $heading;
-    @include font($roboto, $bold, normal);
-    text-transform: uppercase;
-    margin: $baseline-medium 0;
-    
-}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -47,13 +42,10 @@ h2 {
 
 a {
     
-    color: $stj-gold;
     @include hover-off();
 
     &:hover {
         
-        color: $stj-gold;
-    
         @include hover-on();
         text-decoration: none;
     
@@ -69,6 +61,8 @@ p {
     text-transform: uppercase;
     margin: 0 auto;
     padding: 0;
+    color: $white;
+    text-shadow: 0 0 50px 24px $black;
     
 }
 

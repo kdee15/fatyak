@@ -2,7 +2,54 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.section-2__beer-style {
+    
+    ul {
+        
+        li {
+            
+            margin: 0 30px;
+            margin-bottom: 16px;
+            
+        }
+    }
 
+        
+        .ng-valid-parse {
+            
+            z-index: 50000;
+            
+        }
+
+    
+    label {
+        
+        font-family: 'Friz', Helvetica, Arial Black;
+        color: $yak-brownDark;
+        font-size: $x-large;
+        padding: 18px 0;
+        margin: $baseline 0;
+        background: url('../images/site/beer-button__bg.png') top center no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        position: relative;
+        
+        &:after {
+            
+            @include absolute (10px);
+            content: '';
+            background: $black;
+            z-index: -1;
+            box-shadow: 0 0 50px 24px $black;
+            opacity: 0.5;
+            
+        }
+        
+    }
+    
+    
+    
+}
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

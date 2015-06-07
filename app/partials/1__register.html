@@ -18,25 +18,21 @@
             
             <div class="field-item text">
 
-                <label for="input__name">
+                <label for="input__name"><p class="text">NAME</p></label>
 
-                    <img src="assets/images/site/register__name.png" class="label__image" />
-
-                </label>
-
-                <input type="text" class="yak-textfield" id="input__name" ng-model="user.name" required>
-                {{ form.name }}
+                <input type="text" class="yak-textfield" id="input__name" ng-model="user.name">
+                {{ user.name }}
             </div>
 
             <div class="field-item text">
 
                 <label for="input__email">
 
-                    <img src="assets/images/site/register__email.png" class="label__image" />
+                    <label for="input__name"><p class="text">EMAIL</p></label>
 
                 </label>
 
-                <input type="text" class="yak-textfield" id="input__email" ng-model="user.email" name="email" required>
+                <input type="text" class="yak-textfield" id="input__email" ng-model="user.email" name="email">
                 {{ form.email }}
             </div>
 
@@ -62,60 +58,56 @@
 
         <section class="form-panel section-2__beer-style">
 
-            <figure class="figure__yak-text">
+            <h3>Please choose a beer style<br/><span>(Scroll down for more)</span></h3>
 
-                <img src="assets/images/site/choose-beer.png" class="yak-text" />
-
-            </figure>
-            {{ beer.style }} {{ beer.styleOwn }}
             <ul>
 
                 <li>
                     <input type="radio" name="beer-logo" id="ipa" value="IPA" ng-model="beer.style">
                     <label for="ipa">
-                        <img class="label__image" src="assets/images/site/beer-button__ipa.png" />
+                        IPA
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="xpa" value="XPA" ng-model="beer.style">
                     <label for="xpa">
-                        <img class="label__image" src="assets/images/site/beer-button__xpa.png" />
+                        XPA
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="sour-ale" value="Sour Ale" ng-model="beer.style">
                     <label for="sour-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__sour-ale.png" />
+                        Sour Ale
                     </label>
                 </li>
                 
                 <li>
                     <input type="radio" name="beer-logo" id="golden-ale" value="Golden Ale" ng-model="beer.style">
                     <label for="golden-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__golden-ale.png" />
+                        Golden Ale
                     </label>
                 </li>
                 
                 <li>
                     <input type="radio" name="beer-logo" id="blonde-ale" value="Blonde Ale" ng-model="beer.style">
                     <label for="blonde-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__blonde-ale.png" />
+                        Blonde Ale
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="pacific-ale" value="Pacific Ale" ng-model="beer.style">
                     <label for="pacific-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__pacific-ale.png" />
+                        Pacific Ale
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="amber-ale" value="Amber Ale" ng-model="beer.style">
-                    <label for="amber-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__amber-ale.png" />
+                    <label for="amber-ale" class="label">
+                        Amber Ale
                     </label>
                 </li>
 
@@ -126,7 +118,7 @@
                 <li>
                     <input type="radio" name="beer-logo" id="flavoured-ale" value="Flavoured Ale">
                     <label for="flavoured-ale">
-                        <img class="label__image" src="assets/images/site/beer-button__flavoured-ale.png" />
+                        Flavoured Ale
                     </label>
                 </li>
 
@@ -139,7 +131,7 @@
                 <li>
                     <input type="radio" name="beer-logo" id="own-style" value="" ng-model="beer.style">
                     <label for="own-style">
-                        <img class="label__image" src="assets/images/site/beer-button__own.png" />
+                        Name My Own
                     </label>
                 </li>
 
@@ -150,7 +142,6 @@
                 </div>
 
             </ul>
-            {{ beer.style }} {{ beer.styleOwn }}
 
             <figure class="figure__button">
 
@@ -177,7 +168,7 @@
 
         <section class="form-panel section-3__beer-logo">
         
-            {{ beer.logo }}
+            <h3>Please choose a yak head<br/><span>(Scroll down for more)</span></h3>
         
             <ul class="grid">
 
@@ -192,17 +183,19 @@
             
             <figure class="figure__button next">
 
-                <a href="#/beer-name">
+                <button ng-click="" class="button">
                     <img src="assets/images/site/button__next-2.png" class="button" />
-                </a>
+                </button>
 
             </figure>
+            
+            {{ beer.logo }}
 
             <figure class="figure__button">
 
-                <a href="#/beer-style">
+                <button ng-click="" class="button">
                     <img src="assets/images/site/button__back-small.png" class="button" />
-                </a>
+                </button>
 
             </figure>
         
@@ -213,6 +206,8 @@
         <!-- C.2.4. BEER STYLE ------------------------------------------------------------------------------------ -->
 
         <section class="form-panel section-4__beer-name">
+            
+            <h3>Please name your beer</h3>
         
             <figure class="figure__yak-head">
 
@@ -236,17 +231,17 @@
 
             <figure class="figure__button">
 
-                <a href="#/beer-bottle">
+                <button ng-click="" class="button">
                     <img src="assets/images/site/button__done.png" class="button" />
-                </a>
+                </button>
 
             </figure>
 
             <figure class="figure__button">
 
-                <a href="#/yak-head">
+                <button ng-click="" class="button">
                     <img src="assets/images/site/button__done-back.png" class="button" />
-                </a>
+                </button>
 
             </figure>
         
@@ -266,9 +261,9 @@
 
                     <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-lable-logo" />
 
-                    <p class="bottle-beer-name">{{ beer.name }}</p>
+                    <p class="bottle-beer-name">{{ beer.name }}Yak</p>
 
-                    <p class="bottle-beer-style">{{ beer.style }} {{ beer.styleOwn }}</p>
+                    <p class="bottle-beer-style">{{ beer.style }}</p>
 
                     <img class="image__bottle" src="assets/images/site/bottle.png" />
 

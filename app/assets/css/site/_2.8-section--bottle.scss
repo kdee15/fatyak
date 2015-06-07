@@ -28,9 +28,10 @@
             
             .bottle-lable-logo {
                 
-                width: 100px;
+                width: 90px;
                 margin: 0 auto;
                 margin-top: 205px;
+                margin-bottom: 5px;
                 
             }
             
@@ -46,7 +47,7 @@
             
             .bottle-beer-name {
                 
-                font-size: 18px;
+                font-size: 17px;
                 color: $white;
                 opacity: 0.7;
                 
@@ -54,7 +55,10 @@
             
             .bottle-beer-style {
                 
-                
+                font-size: $x-small;
+                color: $yellow;
+                opacity: 0.7;
+                line-height: $x-small;
             }
         }
         

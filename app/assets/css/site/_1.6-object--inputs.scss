@@ -63,6 +63,18 @@ label {
 
     width: 100% !important;
     margin: 0 auto;
+    text-align: center;
+    
+    .text {
+        
+        font-family: 'Friz', helvetica, arial black;
+        text-align: center;
+        color: $white;
+        opacity: 0.6;
+        font-size: $large;
+        margin: $baseline auto;
+        
+    }
 
     .label__image {
 
