@@ -97,17 +97,11 @@ var yakControllers = angular.module('yakControllers', []);
 yakControllers.controller('yakListCtrl', ['$scope', '$http',
   function($scope, $http) {
       
-      console.log('hello');
-      
-    //A.3. STEPS ----------------------------------------------------------------------------------------------
+    //A.3. STEPS ------------------------------------------------------------------------------------------------------
 
     $scope.step = 1;
 
     //A.3. END --------------------------------------------------------------------------------------------------------
-      
-    //A.3. BUILD OBJECT ----------------------------------------------------------------------------------------------
-
-    //A.3. END --------------------------------------------------------------------------------------------------------  
       
     //A.1. YAK HEAD LOGO DATA -----------------------------------------------------------------------------------------  
       
@@ -117,29 +111,23 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
         
     });
       
-    //A.1. END -------------------------------------------------------------------------------------------------------- 
-      
-    //A.2. BEER STYLE DATA --------------------------------------------------------------------------------------------
-      
-    $http.get('data/beers.json').success(function(data) {
-        
-      $scope.beers = data;
-        
-    });
-      
-    //A.2. END --------------------------------------------------------------------------------------------------------
+    //A.1. END --------------------------------------------------------------------------------------------------------
       
     //A.4. ADD USER DETAILS -------------------------------------------------------------------------------------------
       
       $scope.bouForm = function() {
       
-        var endpoint = 'http://forgesimpledata.cloudapp.net/FatYakService.svc/InsertFatYakUser/'
+        var endpoint = 'http://forgesimpledata.cloudapp.net/FatYakService.svc/InsertFatYakUser/';
         
-        var theString = $scope.user.name + '/' + $scope.user.email + '/' + $scope.beer.style + '/' + $scope.beer.name + '/' + $scope.beer.logo
+        var theString = $scope.user.name + '/' + 
+                        $scope.user.email + '/' + 
+                        $scope.beer.style + '/' + 
+                        $scope.beer.name + '/' + 
+                        $scope.beer.logo;
         
         $http.get( endpoint + theString).success(function(data) {
         
-          console.log (data);
+            console.log (data);
 
         });
           
