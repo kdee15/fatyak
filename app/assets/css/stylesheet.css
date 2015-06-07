@@ -1932,10 +1932,6 @@ label .label__image {
   width: 100%;
 }
 
-.button {
-  padding: 0;
-}
-
 .beer__button {
   width: 100%;
   margin: 0 auto;
@@ -1949,13 +1945,42 @@ label .label__image {
   width: 100%;
   margin: 0 auto;
   z-index: 100;
+  text-align: center;
 }
 .figure__button .button {
-  width: 100%;
-  height: auto;
-  display: block;
+  position: relative;
+  font-family: 'Friz', Helvetica, Arial Black;
+  color: #27180F;
+  font-size: 1.7em;
+  padding: 18px 24px;
+  margin: 24px 0;
   border: 0;
-  background: none;
+  background: url("../images/site/beer-button__bg.png") top center no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.figure__button .button.next {
+  margin-bottom: 0px;
+}
+.figure__button .button.back {
+  font-size: 1.125em;
+  padding: 8px 24px;
+}
+.figure__button .button.done {
+  margin-bottom: 0px;
+}
+.figure__button .button:after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  content: '';
+  background: #000;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 50px 24px #000;
+          box-shadow: 0 0 50px 24px #000;
+  opacity: 0.5;
 }
 
 ul {
@@ -2051,7 +2076,7 @@ ul li {
   overflow: hidden;
 }
 .section-3__beer-logo .next {
-  margin-top: -27px;
+  margin-top: 0px;
 }
 
 .section-4__beer-name .figure__yak-head {
@@ -2127,7 +2152,7 @@ ul li {
 }
 .section-5__beer-bottle .figure__bottle .figure__button {
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
   width: 100%;
 }
 .section-5__beer-bottle .figure__yak-text {

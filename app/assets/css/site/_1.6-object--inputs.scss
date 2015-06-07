@@ -87,11 +87,7 @@ label {
 
 // A.4. BUTTONS -------------------------------------------------------------------------------------------------------
 
-.button {
-    
-    padding: 0;   
-    
-}
+
 
 .beer__button {
     
@@ -111,14 +107,51 @@ label {
     width: 100%;
     margin: 0 auto;
     z-index: 100;
+    text-align: center;
 
     .button {
 
-        width: 100%;
-        height: auto;
-        display: block;
+        position: relative;
+        font-family: 'Friz', Helvetica, Arial Black;
+        color: $yak-brownDark;
+        font-size: $x-large;
+        padding: 18px 24px;
+        margin: $baseline 0;
         border: 0;
-        background: none;
+        background: url('../images/site/beer-button__bg.png') top center no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        
+        &.next {
+            
+            margin-bottom: 0px;
+            
+        }
+        
+        &.back {
+            
+            font-size: $medium;
+            padding: 8px 24px;
+            
+        }
+        
+        &.done {
+            
+            margin-bottom: 0px;
+            
+        }
+        
+        
+        &:after {
+            
+            @include absolute (10px);
+            content: '';
+            background: $black;
+            z-index: -1;
+            box-shadow: 0 0 50px 24px $black;
+            opacity: 0.5;
+            
+        }
     }
 }
 
