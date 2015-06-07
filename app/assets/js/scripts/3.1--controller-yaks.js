@@ -78,7 +78,7 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
             
                 "style" : $scope.beer.style,
                 "logo" : $scope.beer.logo,
-                "name" : $scope.beer.name
+                "name" : $scope.beer.name 
         
             }
         
@@ -86,31 +86,17 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
         
         console.log(formObject);
       
+        var endpoint = 'http://forgesimpledata.cloudapp.net/FatYakService.svc/InsertFatYakUser/'
+        
+        var theString = $scope.user.name + '/' + $scope.user.email + '/' + $scope.beer.style + '/' + $scope.beer.name + '/' + $scope.beer.logo
+        
+        $http.get( endpoint + theString).success(function(data) {
+        
+          console.log (endpoint + theString);
+
+        });
+          
       }
-      
-      /*
-      $scope.endObject = {
-      
-          "person" : {
-          
-                "name" : user.name,
-                "email" : user.email
-          
-          },
-          
-          "theBeer" : {
-          
-                "style" : beer.style,
-                "logo" : beer.logo,
-                "name" : beer.name
-           
-          }
-      
-      };
-      
-      console.log($scope.endObject);
-      
-      */
       
     //A.4. END --------------------------------------------------------------------------------------------------------   
       
