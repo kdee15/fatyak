@@ -13,7 +13,25 @@
             position: relative;
             padding-left: 0 !important;
             overflow: hidden;
+            
+            label {
+                
+                cursor: pointer;
+                
+                &.active {
 
+                    &:after {
+
+                        @include absolute (50px);
+                        content: '';
+                        background: $white;
+                        border-radius: 30px;
+                        box-shadow: 0 0 50px 24px $white;
+                        opacity: 0.5;
+
+                    }
+                }
+            }
         }
     }
     

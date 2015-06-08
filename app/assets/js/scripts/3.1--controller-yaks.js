@@ -25,6 +25,9 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
     $scope.chosenLogo = 'null';
       
+    $scope.active = false;
+      
+      
     //A.4. END --------------------------------------------------------------------------------------------------------
       
     //A.1. YAK HEAD LOGO DATA -----------------------------------------------------------------------------------------  
@@ -41,6 +44,8 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
       $scope.bouForm = function() {
       
+        $scope.active = !$scope.active;
+          
         var endpoint = 'http://forgesimpledata.cloudapp.net/FatYakService.svc/InsertFatYakUser/';
         
         var theString = $scope.user.name + '/' + 

@@ -149,8 +149,6 @@
 
             </figure>
             
-            {{ beer.logo }}
-
             <figure class="figure__button">
 
                 <button ng-click=" step = 1 " class="back button">
@@ -172,13 +170,174 @@
         
             <ul class="grid">
 
-                <li class="grid__half" ng-repeat="yak in yaks">
-                    <input type="radio" name="yak-head" id="{{yak.id}}" value="{{yak.id}}" ng-model="beer.logo">
-                    <label for="{{yak.id}}" ng-click=" chosenLogo = 'chosen' + yak.id " ng-class="{'active': chosenLogo == 'chosen' + yak.id}">
-                        <img class="label__image" ng-src="{{yak.imageUrl}}" />
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="1" value="1" ng-model="beer.logo">
+                    <label for="1" ng-click=" chosenLogo = 1 " ng-class="{'active': chosenLogo == 1}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__01.png" />
+                    </label>
+                </li>
+                
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="2" value="2" ng-model="beer.logo">
+                    <label for="2" ng-click=" chosenLogo = 2 " ng-class="{'active': chosenLogo == 2}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__02.png" />
                     </label>
                 </li> 
-                
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="3" value="2" ng-model="beer.logo">
+                    <label for="3" ng-click=" chosenLogo = 3 " ng-class="{'active': chosenLogo == 3}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__03.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="4" value="2" ng-model="beer.logo">
+                    <label for="4" ng-click=" chosenLogo = 4 " ng-class="{'active': chosenLogo == 4}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__04.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="5" value="2" ng-model="beer.logo">
+                    <label for="5" ng-click=" chosenLogo = 5 " ng-class="{'active': chosenLogo == 5}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__05.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="6" value="2" ng-model="beer.logo">
+                    <label for="6" ng-click=" chosenLogo = 6 " ng-class="{'active': chosenLogo == 6}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__06.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="7" value="7" ng-model="beer.logo">
+                    <label for="7" ng-click=" chosenLogo = 7 " ng-class="{'active': chosenLogo == 7}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__07.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="8" value="8" ng-model="beer.logo">
+                    <label for="8" ng-click=" chosenLogo = 8 " ng-class="{'active': chosenLogo == 8}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__08.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="9" value="9" ng-model="beer.logo">
+                    <label for="9" ng-click=" chosenLogo = 9 " ng-class="{'active': chosenLogo == 9}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__09.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="10" value="10" ng-model="beer.logo">
+                    <label for="10" ng-click=" chosenLogo = 10 " ng-class="{'active': chosenLogo == 10}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__10.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="11" value="11" ng-model="beer.logo">
+                    <label for="11" ng-click=" chosenLogo = 11 " ng-class="{'active': chosenLogo == 11}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__11.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="12" value="12" ng-model="beer.logo">
+                    <label for="12" ng-click=" chosenLogo = 12 " ng-class="{'active': chosenLogo == 12}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__12.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="13" value="2" ng-model="beer.logo">
+                    <label for="13" ng-click=" chosenLogo = 13 " ng-class="{'active': chosenLogo == 13}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__13.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="14" value="2" ng-model="beer.logo">
+                    <label for="14" ng-click=" chosenLogo = 14 " ng-class="{'active': chosenLogo == 14}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__14.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="15" value="2" ng-model="beer.logo">
+                    <label for="15" ng-click=" chosenLogo = 15 " ng-class="{'active': chosenLogo == 15}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__15.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="16" value="2" ng-model="beer.logo">
+                    <label for="16" ng-click=" chosenLogo = 16 " ng-class="{'active': chosenLogo == 16}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__16.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="17" value="2" ng-model="beer.logo">
+                    <label for="17" ng-click=" chosenLogo = 17 " ng-class="{'active': chosenLogo == 17}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__17.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="18" value="18" ng-model="beer.logo">
+                    <label for="18" ng-click=" chosenLogo = 18 " ng-class="{'active': chosenLogo == 18}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__18.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="19" value="2" ng-model="beer.logo">
+                    <label for="19" ng-click=" chosenLogo = 19 " ng-class="{'active': chosenLogo == 19}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__19.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="20" value="20" ng-model="beer.logo">
+                    <label for="20" ng-click=" chosenLogo = 20 " ng-class="{'active': chosenLogo == 20}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__20.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="21" value="2" ng-model="beer.logo">
+                    <label for="21" ng-click=" chosenLogo = 21 " ng-class="{'active': chosenLogo == 21}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__21.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="22" value="2" ng-model="beer.logo">
+                    <label for="22" ng-click=" chosenLogo = 22 " ng-class="{'active': chosenLogo == 22}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__22.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="23" value="2" ng-model="beer.logo">
+                    <label for="23" ng-click=" chosenLogo = 23 " ng-class="{'active': chosenLogo == 23}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__23.png" />
+                    </label>
+                </li> 
+                 
+                <li class="grid__half">
+                    <input type="radio" name="yak-head" id="24" value="2" ng-model="beer.logo">
+                    <label for="24" ng-click=" chosenLogo = 24 " ng-class="{'active': chosenLogo == 24}">
+                        <img class="label__image" ng-src="assets/images/site/yak-head__24.png" />
+                    </label>
+                </li> 
+
             </ul>
             
             <figure class="figure__button next">
@@ -286,7 +445,7 @@
 
             </figure>
             
-            <section class="yaksess" ng-show="yaksess">
+            <section class="yaksess" ng-class="{ 'active': active }">
             
                 <h1>You have successfully sumbitted your Yak</h1>
             

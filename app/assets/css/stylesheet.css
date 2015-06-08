@@ -1925,7 +1925,7 @@ form {
 input[type="radio"] {
   margin: 0;
   position: absolute;
-  z-index: -20;
+  z-index: -200;
 }
 
 label {
@@ -2052,8 +2052,8 @@ ul li {
   margin: 0 30px;
   margin-bottom: 16px;
 }
-.section-2__beer-style .ng-valid-parse {
-  z-index: 50000;
+.section-2__beer-style input[type='radio'] {
+  z-index: -50000;
 }
 .section-2__beer-style label {
   font-family: 'Friz', Helvetica, Arial Black;
@@ -2068,16 +2068,23 @@ ul li {
 }
 .section-2__beer-style label:after {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
   content: '';
   background: #000;
   z-index: -1;
   -webkit-box-shadow: 0 0 50px 24px #000;
           box-shadow: 0 0 50px 24px #000;
   opacity: 0.5;
+}
+.section-2__beer-style label.active {
+  color: #fff;
+}
+.section-2__beer-style label.active:after {
+  -webkit-box-shadow: 0 0 50px 24px #fff;
+          box-shadow: 0 0 50px 24px #fff;
 }
 
 .section-3__beer-logo .grid {
@@ -2087,6 +2094,22 @@ ul li {
   position: relative;
   padding-left: 0 !important;
   overflow: hidden;
+}
+.section-3__beer-logo .grid .grid__half label {
+  cursor: pointer;
+}
+.section-3__beer-logo .grid .grid__half label.active:after {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  bottom: 50px;
+  left: 50px;
+  content: '';
+  background: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 50px 24px #fff;
+          box-shadow: 0 0 50px 24px #fff;
+  opacity: 0.5;
 }
 .section-3__beer-logo .next {
   margin-top: 0px;
@@ -2180,15 +2203,10 @@ ul li {
   height: auto;
 }
 .section-5__beer-bottle .yaksess {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  z-index: 4000000;
-  background: #fff;
-  border: 20px solid pink;
+  color: #fff;
+}
+.section-5__beer-bottle .yaksess.active {
+  display: block;
 }
 
 body {

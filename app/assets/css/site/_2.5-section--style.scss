@@ -15,9 +15,9 @@
     }
 
         
-        .ng-valid-parse {
+        input[type='radio'] {
             
-            z-index: 50000;
+            z-index: -50000;
             
         }
 
@@ -36,7 +36,7 @@
         
         &:after {
             
-            @include absolute (10px);
+            @include absolute (20px);
             content: '';
             background: $black;
             z-index: -1;
@@ -45,6 +45,16 @@
             
         }
         
+        &.active {
+            
+            color: $white;
+            
+            &:after {
+                
+                box-shadow: 0 0 50px 24px $white;
+                   
+            }
+        }
     }
     
     

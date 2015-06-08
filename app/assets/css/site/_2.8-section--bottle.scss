@@ -93,13 +93,13 @@
     
     .yaksess {
         
-        @include absolute(0);
-        position: fixed;
-        z-index: 4000000;
-        background: $white;
-        border: 20px solid pink;
+        color: $white;
         
-        
+        &.active {
+            
+            display: block;   
+            
+        }
     }
     
 }
