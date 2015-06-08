@@ -21,7 +21,6 @@
                 <label for="input__name"><p class="text">NAME</p></label>
 
                 <input type="text" class="yak-textfield" id="input__name" ng-model="user.name">
-                {{ user.name }}
             </div>
 
             <div class="field-item text">
@@ -33,7 +32,6 @@
                 </label>
 
                 <input type="text" class="yak-textfield" id="input__email" ng-model="user.email" name="email">
-                {{ form.email }}
             </div>
 
             <figure class="figure__button">
@@ -64,14 +62,14 @@
 
                 <li>
                     <input type="radio" name="beer-logo" id="ipa" value="IPA" ng-model="beer.style">
-                    <label for="ipa">
+                    <label class="icon-autoscroll-disabled" for="ipa" ng-click="autoScroll = !autoScroll" ng-class="{'icon-autoscroll': autoScroll, 'icon-autoscroll-disabled': !autoScroll}">
                         IPA
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="xpa" value="XPA" ng-model="beer.style">
-                    <label for="xpa">
+                    <label class="icon-autoscroll-disabled" for="xpa" ng-click="autoScroll = !autoScroll" ng-class="{'icon-autoscroll': autoScroll, 'icon-autoscroll-disabled': !autoScroll}">
                         XPA
                     </label>
                 </li>
@@ -117,25 +115,25 @@
 
                 <li>
                     <input type="radio" name="beer-logo" id="flavoured-ale" value="Flavoured Ale">
-                    <label for="flavoured-ale">
+                    <label for="flavoured-ale" ng-click="ale = !ale">
                         Flavoured Ale
                     </label>
                 </li>
 
-                <div class="field-item text">
+                <div class="field-item text" ng-show="ale">
 
                     <input type="text" class="yak-textfield" id="style-own" ng-model="beer.style" name="style-own">
 
                 </div>
 
                 <li>
-                    <input type="radio" name="beer-logo" id="own-style" value="" ng-model="beer.style">
+                    <input type="radio" name="beer-logo" id="own-style" ng-click="own = !own">
                     <label for="own-style">
                         Name My Own
                     </label>
                 </li>
 
-                <div class="field-item text">
+                <div class="field-item text" ng-show="own">
 
                     <input type="text" class="yak-textfield" id="style-own" ng-model="beer.style">
 
@@ -191,8 +189,6 @@
 
             </figure>
             
-            {{ beer.logo }}
-
             <figure class="figure__button">
 
                 <button ng-click=" step = 2 " class="back button">
@@ -271,8 +267,17 @@
 
                     <figure class="figure__button">
 
-                        <button ng-click="bouForm()" class="submit button">
+                        <button ng-click="bouForm();" class="submit button">
                             SUBMIT MY YAK
+                        </button>
+                        
+
+                    </figure>
+                    
+                    <figure class="figure__button below">
+
+                        <button ng-click=" step = 4 " class="back button">
+                            BACK
                         </button>
 
                     </figure>
@@ -280,6 +285,12 @@
                 </div>
 
             </figure>
+            
+            <section class="yaksess" ng-show="yaksess">
+            
+                <h1>You have successfully sumbitted your Yak</h1>
+            
+            </section>
         
         </section>
         <!-- C.2.5. END ------------------------------------------------------------------------------------------- -->
