@@ -107,7 +107,7 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
 $scope.isAutoScroll = function()
 {
-    $scope.autoScroll = ($scope.autoScroll) ? false : true;
+    $scope.autoScroll = ($scope.autoScroll) ? false : true; 
     return $scope.autoScroll;
 }
       
