@@ -8,7 +8,7 @@
 
         <!-- C.2.1. REGISTRATION ---------------------------------------------------------------------------------- -->
         
-        <section class="form-panel section-1__registration">
+        <section class="form-panel section-1__registration" ng-show=" step == '1' ">
             
             <figure class="figure__logo">
 
@@ -38,7 +38,7 @@
 
             <figure class="figure__button">
 
-                <button ng-click="" class="next button">
+                <button ng-click=" step = 2 " class="next button">
                     NEXT
                 </button>
 
@@ -56,7 +56,7 @@
         
         <!-- C.2.2. BEER STYLE ------------------------------------------------------------------------------------ -->
 
-        <section class="form-panel section-2__beer-style">
+        <section class="form-panel section-2__beer-style" ng-show=" step == 2 ">
 
             <h3>Please choose a beer style<br/><span>(Scroll down for more)</span></h3>
 
@@ -145,7 +145,7 @@
 
             <figure class="figure__button next">
 
-                <button ng-click="" class="next button">
+                <button ng-click=" step = 3 " class="next button">
                     NEXT
                 </button>
 
@@ -155,7 +155,7 @@
 
             <figure class="figure__button">
 
-                <button ng-click="" class="back button">
+                <button ng-click=" step = 1 " class="back button">
                     BACK
                 </button>
 
@@ -168,7 +168,7 @@
         
         <!-- C.2.3. BEER LOGO ------------------------------------------------------------------------------------- -->
 
-        <section class="form-panel section-3__beer-logo">
+        <section class="form-panel section-3__beer-logo" ng-show=" step == 3 ">
         
             <h3>Please choose a yak head<br/><span>(Scroll down for more)</span></h3>
         
@@ -185,7 +185,7 @@
             
             <figure class="figure__button next">
 
-                <button ng-click="" class="next button">
+                <button ng-click=" step = 4 " class="next button">
                     NEXT
                 </button>
 
@@ -195,7 +195,7 @@
 
             <figure class="figure__button">
 
-                <button ng-click="" class="back button">
+                <button ng-click=" step = 2 " class="back button">
                     BACK
                 </button>
 
@@ -207,7 +207,7 @@
         
         <!-- C.2.4. BEER STYLE ------------------------------------------------------------------------------------ -->
 
-        <section class="form-panel section-4__beer-name">
+        <section class="form-panel section-4__beer-name" ng-show=" step == 4 ">
             
             <h3>Please name your beer</h3>
         
@@ -233,7 +233,7 @@
 
             <figure class="figure__button">
 
-                <button ng-click="" class="done button">
+                <button ng-click=" step = 5 " class="done button">
                     DONE
                 </button>
 
@@ -241,7 +241,7 @@
 
             <figure class="figure__button">
 
-                <button ng-click="" class="back button">
+                <button ng-click=" step = 3 " class="back button">
                     BACK
                 </button>
 
@@ -253,7 +253,7 @@
         
         <!-- C.2.5. BEER BOTTLE ----------------------------------------------------------------------------------- -->
         
-        <section class="section-5__beer-bottle">
+        <section class="section-5__beer-bottle" ng-show=" step == 5 ">
         
             <figure class="figure__bottle">
                 

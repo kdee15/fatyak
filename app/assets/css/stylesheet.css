@@ -1862,6 +1862,19 @@ form {
   max-width: 100%;
 }
 
+/*
+.form-panel {
+
+    display:none;
+    
+    &.active {
+    
+        display: block;
+    
+    }
+
+}
+*/
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .form {
     width: 400px;
