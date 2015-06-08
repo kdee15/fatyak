@@ -2168,6 +2168,9 @@ ul li {
   bottom: 60px;
   width: 100%;
 }
+.section-5__beer-bottle .figure__bottle .figure__button.below {
+  bottom: 0;
+}
 .section-5__beer-bottle .figure__yak-text {
   width: 100%;
   margin: 0 auto;
@@ -2175,6 +2178,17 @@ ul li {
 .section-5__beer-bottle .figure__yak-text .yak-text {
   width: 100%;
   height: auto;
+}
+.section-5__beer-bottle .yaksess {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4000000;
+  background: #fff;
+  border: 20px solid pink;
 }
 
 body {
