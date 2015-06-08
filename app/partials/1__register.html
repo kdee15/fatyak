@@ -62,49 +62,49 @@
 
                 <li>
                     <input type="radio" name="beer-logo" id="ipa" value="IPA" ng-model="beer.style">
-                    <label class="icon-autoscroll-disabled" for="ipa" ng-click="autoScroll = !autoScroll" ng-class="{'icon-autoscroll': autoScroll, 'icon-autoscroll-disabled': !autoScroll}">
+                    <label for="ipa" ng-click=" viewing = 'logo1' " ng-class="{'active': viewing == 'logo1'}">
                         IPA
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="xpa" value="XPA" ng-model="beer.style">
-                    <label class="icon-autoscroll-disabled" for="xpa" ng-click="autoScroll = !autoScroll" ng-class="{'icon-autoscroll': autoScroll, 'icon-autoscroll-disabled': !autoScroll}">
+                    <label for="xpa" ng-click=" viewing = 'logo2' " ng-class="{'active': viewing == 'logo2'}">
                         XPA
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="sour-ale" value="Sour Ale" ng-model="beer.style">
-                    <label for="sour-ale">
+                    <label for="sour-ale" ng-click=" viewing = 'logo3' " ng-class="{'active': viewing == 'logo3'}">
                         Sour Ale
                     </label>
                 </li>
                 
                 <li>
                     <input type="radio" name="beer-logo" id="golden-ale" value="Golden Ale" ng-model="beer.style">
-                    <label for="golden-ale">
+                    <label for="golden-ale" ng-click=" viewing = 'logo4' " ng-class="{'active': viewing == 'logo4'}">
                         Golden Ale
                     </label>
                 </li>
                 
                 <li>
                     <input type="radio" name="beer-logo" id="blonde-ale" value="Blonde Ale" ng-model="beer.style">
-                    <label for="blonde-ale">
+                    <label for="blonde-ale" ng-click=" viewing = 'logo5' " ng-class="{'active': viewing == 'logo5'}">
                         Blonde Ale
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="pacific-ale" value="Pacific Ale" ng-model="beer.style">
-                    <label for="pacific-ale">
+                    <label for="pacific-ale" ng-click=" viewing = 'logo6' " ng-class="{'active': viewing == 'logo6'}">
                         Pacific Ale
                     </label>
                 </li>
 
                 <li>
                     <input type="radio" name="beer-logo" id="amber-ale" value="Amber Ale" ng-model="beer.style">
-                    <label for="amber-ale" class="label">
+                    <label for="amber-ale" ng-click=" viewing = 'logo7' " ng-class="{'active': viewing == 'logo7'}">
                         Amber Ale
                     </label>
                 </li>
@@ -174,7 +174,7 @@
 
                 <li class="grid__half" ng-repeat="yak in yaks">
                     <input type="radio" name="yak-head" id="{{yak.id}}" value="{{yak.id}}" ng-model="beer.logo">
-                    <label for="{{yak.id}}">
+                    <label for="{{yak.id}}" ng-click=" chosenLogo = 'chosen' + yak.id " ng-class="{'active': chosenLogo == 'chosen' + yak.id}">
                         <img class="label__image" ng-src="{{yak.imageUrl}}" />
                     </label>
                 </li> 

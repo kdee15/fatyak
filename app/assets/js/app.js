@@ -105,11 +105,9 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
     //A.4. BUTTON TOGGLE ----------------------------------------------------------------------------------------------
       
-$scope.isAutoScroll = function()
-{
-    $scope.autoScroll = ($scope.autoScroll) ? false : true;
-    return $scope.autoScroll;
-}
+    $scope.viewing = 'null';
+      
+    $scope.chosenLogo = 'null';
       
     //A.4. END --------------------------------------------------------------------------------------------------------
       
