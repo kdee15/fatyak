@@ -1,20 +1,18 @@
-# [Konstruct Boilerplate 0.4.1](http://traaidmark.github.io/Konstruct/)
+# [##](##)
 
-This is a boilerplate for your next big Konstruct website / app / rocket! We made it simpler for you to deal with all of the depencies and structuring, so you don't have to worry about it!
+Intro for this project
 
 <hr />
 
 ## Get Started
 
-Run <code>./install.sh</code> in your terminal from the <code>_system</code> folder.
-
-Then run <code>gulp</code> to get coding.
+Install instructions here.
 
 <hr />
 
 ## Authors
 
-* Adrian Kirsten - [@traaidmark](https://twitter.com/traaidmark) - [www.traaidmark.com](http://www.traaidmark.com)
+* 
 
 <hr />
 
