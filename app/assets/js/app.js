@@ -52,30 +52,6 @@ yakApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/1__register.html',
             controller: 'yakListCtrl'
         })
-        
-        .state('beer-style', {
-            url: '/beer-style',
-            templateUrl: 'partials/2__beer-style.html',
-            controller: 'yakListCtrl'
-        })
-            
-        .state('yak-head', {
-            url: '/yak-head',
-            templateUrl: 'partials/3__yak-head.html',
-            controller: 'yakListCtrl'
-        })
-                
-        .state('beer-name', {
-            url: '/beer-name',
-            templateUrl: 'partials/4__beer-name.html',
-            controller: 'yakListCtrl'
-        })
-                    
-        .state('beer-bottle', {
-            url: '/beer-bottle',
-            templateUrl: 'partials/5__beer-bottle.html',
-            controller: 'yakListCtrl'
-        })
     
     });
 
@@ -113,17 +89,7 @@ yakControllers.controller('yakListCtrl', ['$scope', '$http',
       
       
     //A.4. END --------------------------------------------------------------------------------------------------------
-      
-    //A.1. YAK HEAD LOGO DATA -----------------------------------------------------------------------------------------  
-      
-    $http.get('data/yaks.json').success(function(data) {
-        
-      $scope.yaks = data;
-        
-    });
-      
-    //A.1. END --------------------------------------------------------------------------------------------------------
-      
+
     //A.4. ADD USER DETAILS -------------------------------------------------------------------------------------------
       
       $scope.bouForm = function() {

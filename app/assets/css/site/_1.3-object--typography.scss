@@ -5,7 +5,9 @@
 @font-face {
     
   font-family: 'Friz';
-  src: url('../fonts/FrizQuadrataBold.ttf') format('truetype'); 
+  src:  url('../fonts/FrizQuadrataBold.ttf') format('truetype'); 
+  src:  url('../fonts/FrizQuadrataBold.woff') format('woff'),
+        url('../fonts/FrizQuaBol.woff') format('woff');
     
 }
 

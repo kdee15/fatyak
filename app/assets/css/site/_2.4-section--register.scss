@@ -34,10 +34,9 @@
             
             position: relative;
             margin: -30px 0;
-            z-index: 0;
+            z-index: 5;
             
         }
-        
     }
     
     .figure__text {
@@ -53,8 +52,13 @@
             opacity: 0.6;
             
         }
-    } 
+    }
     
+    .figure__button {
+        
+        margin-bottom: $baseline-large;   
+        
+    }
 }
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

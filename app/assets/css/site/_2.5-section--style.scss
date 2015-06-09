@@ -15,11 +15,25 @@
     }
 
         
-        input[type='radio'] {
+    input[type='radio'] {
+
+        z-index: -50000;
+
+    }
+    
+    .text,
+    .select-box {
+        
+        display: none;
+        
+        &.active {
             
-            z-index: -50000;
+            display: block;
+            text-align: center;
             
         }
+        
+    }
 
     
     label {
@@ -56,9 +70,6 @@
             }
         }
     }
-    
-    
-    
 }
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

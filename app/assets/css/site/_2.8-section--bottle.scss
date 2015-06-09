@@ -5,79 +5,97 @@
 .section-5__beer-bottle {
     
     position: relative;
-    background: url('../images/site/beer-bg.jpg');
-    background-size: cover;
-    z-index: 0;
     
-    .figure__bottle {
+    
+    
+    .section__bottle {
         
-        @include aspect-ratio (100%, 165%);
-        margin: 0;
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: $baseline-small;
+        background: url('../images/site/beer-bg.jpg');
+        background-size: cover;
+        z-index: 0;
         
-        .content {
-            
-            @include absolute (0);
-            
-            .bottle-neck-logo {
-                
-                width: 32px;
-                margin: 0 auto;
-                margin-top: 65px;
-                
-            }
-            
-            .bottle-lable-logo {
-                
-                width: 90px;
-                margin: 0 auto;
-                margin-top: 205px;
-                margin-bottom: 5px;
-                
-            }
-            
-            .image__bottle {
-                
-                position: absolute;
-                width: 100%;
-                top: 0;
-                left: 0;
-                z-index: -10;
-                
-            }
-            
-            .bottle-beer-name {
-                
-                font-size: 17px;
-                color: $white;
-                opacity: 0.7;
-                
-            }
-            
-            .bottle-beer-style {
-                
-                font-size: $x-small;
-                color: $yellow;
-                opacity: 0.7;
-                line-height: $x-small;
-            }
-        }
-        
-        
-        .figure__button {
-            
-            position: absolute;
-            bottom: 60px;
-            width: 100%;
-            
-            &.below {
-                
-                bottom: 0;   
-                
-            }
-            
-        }
     }
+    
+    .align {
         
+        
+    }
+    
+        
+    
+        .figure__bottle {
+
+            @include aspect-ratio (100%, 165%);
+            margin: 0 auto;
+
+            .content {
+
+                @include absolute (0);
+
+                .bottle-neck-logo {
+
+                    width: 25px;
+                    margin: 0 auto;
+                    margin-top: 49px;
+
+                }
+
+                .bottle-lable-logo {
+
+                    width: 65px;
+                    margin: 0 auto;
+                    margin-top: 155px;
+                    margin-bottom: 5px;
+
+                }
+
+                .image__bottle {
+
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -10;
+
+                }
+
+                .bottle-beer-name {
+
+                    font-size: 10px;
+                    color: $white;
+                    opacity: 0.7;
+
+                }
+
+                .bottle-beer-style {
+
+                    font-size: $x-small;
+                    color: $yellow;
+                    opacity: 0.7;
+                    line-height: $x-small;
+                }
+            }
+
+
+            .figure__button {
+
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+
+                &.below {
+
+                    bottom: -40px;   
+
+                }
+
+            }
+        }
+
     .figure__yak-text {
         
         width: 100%;
@@ -93,7 +111,21 @@
     
     .yaksess {
         
+        @include absolute(0);
+        position: fixed;
+        background: url('../images/site/yak-bg.jpg');
         color: $white;
+        display: none;
+        z-index: 200;
+        text-align: center;
+        
+        h1 {
+            
+            @include vertical-align(absolute);
+            width: 100%;
+            font-family: 'Friz', helvetica, arial bold;
+            
+        }
         
         &.active {
             

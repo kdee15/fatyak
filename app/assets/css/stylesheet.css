@@ -1816,6 +1816,7 @@ html, body {
 @font-face {
   font-family: 'Friz';
   src: url("../fonts/FrizQuadrataBold.ttf") format("truetype");
+  src: url("../fonts/FrizQuadrataBold.woff") format("woff"), url("../fonts/FrizQuaBol.woff") format("woff");
 }
 html {
   font-family: 'Friz', sans-serif, arial bold, helvetica;
@@ -1916,10 +1917,34 @@ form {
   border: 0;
   font-size: 1.5em;
   font-weight: bold;
-  color: #fff;
+  color: #27180F;
   text-align: center;
   width: 80% !important;
   margin: 0 auto;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  text-shadow: 0px 0px 20px #000;
+  opacity: 0.7;
+}
+
+:-moz-placeholder {
+  color: #fff;
+  text-shadow: 0px 0px 20px #000;
+  opacity: 0.7;
+}
+
+::-moz-placeholder {
+  color: #fff;
+  text-shadow: 0px 0px 20px #000;
+  opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  text-shadow: 0px 0px 20px #000;
+  opacity: 0.7;
 }
 
 input[type="radio"] {
@@ -2035,7 +2060,7 @@ ul li {
 .section-1__registration .form .button {
   position: relative;
   margin: -30px 0;
-  z-index: 0;
+  z-index: 5;
 }
 .section-1__registration .figure__text {
   width: 40%;
@@ -2047,6 +2072,9 @@ ul li {
   height: auto;
   opacity: 0.6;
 }
+.section-1__registration .figure__button {
+  margin-bottom: 96px;
+}
 
 .section-2__beer-style ul li {
   margin: 0 30px;
@@ -2054,6 +2082,15 @@ ul li {
 }
 .section-2__beer-style input[type='radio'] {
   z-index: -50000;
+}
+.section-2__beer-style .text,
+.section-2__beer-style .select-box {
+  display: none;
+}
+.section-2__beer-style .text.active,
+.section-2__beer-style .select-box.active {
+  display: block;
+  text-align: center;
 }
 .section-2__beer-style label {
   font-family: 'Friz', Helvetica, Arial Black;
@@ -2131,11 +2168,16 @@ ul li {
   font-size: 1.7em;
   color: #fff;
   opacity: 0.5;
-  text-shadow: 0 0 300px #000;
 }
 
 .section-5__beer-bottle {
   position: relative;
+}
+.section-5__beer-bottle .section__bottle {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 12px;
   background: url("../images/site/beer-bg.jpg");
   background-size: cover;
   z-index: 0;
@@ -2143,7 +2185,7 @@ ul li {
 .section-5__beer-bottle .figure__bottle {
   position: relative;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
 }
 .section-5__beer-bottle .figure__bottle:before {
   content: "";
@@ -2158,14 +2200,14 @@ ul li {
   left: 0;
 }
 .section-5__beer-bottle .figure__bottle .content .bottle-neck-logo {
-  width: 32px;
+  width: 25px;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 49px;
 }
 .section-5__beer-bottle .figure__bottle .content .bottle-lable-logo {
-  width: 90px;
+  width: 65px;
   margin: 0 auto;
-  margin-top: 205px;
+  margin-top: 155px;
   margin-bottom: 5px;
 }
 .section-5__beer-bottle .figure__bottle .content .image__bottle {
@@ -2176,7 +2218,7 @@ ul li {
   z-index: -10;
 }
 .section-5__beer-bottle .figure__bottle .content .bottle-beer-name {
-  font-size: 17px;
+  font-size: 10px;
   color: #fff;
   opacity: 0.7;
 }
@@ -2188,11 +2230,11 @@ ul li {
 }
 .section-5__beer-bottle .figure__bottle .figure__button {
   position: absolute;
-  bottom: 60px;
+  bottom: 20px;
   width: 100%;
 }
 .section-5__beer-bottle .figure__bottle .figure__button.below {
-  bottom: 0;
+  bottom: -40px;
 }
 .section-5__beer-bottle .figure__yak-text {
   width: 100%;
@@ -2203,7 +2245,26 @@ ul li {
   height: auto;
 }
 .section-5__beer-bottle .yaksess {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background: url("../images/site/yak-bg.jpg");
   color: #fff;
+  display: none;
+  z-index: 200;
+  text-align: center;
+}
+.section-5__beer-bottle .yaksess h1 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  font-family: 'Friz', helvetica, arial bold;
 }
 .section-5__beer-bottle .yaksess.active {
   display: block;
@@ -2211,6 +2272,7 @@ ul li {
 
 body {
   position: relative;
+  padding-bottom: 96px;
 }
 body .background {
   position: fixed;
@@ -2240,14 +2302,18 @@ body .figure__yak-text .yak-text {
   height: auto;
 }
 .page-home .figure__text {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  margin-top: -60px;
+  margin-top: -70px;
 }
 .page-home .figure__text .yak-text {
   width: 100%;
   height: auto;
   opacity: 0.6;
+}
+.page-home h3 {
+  margin-top: 12px;
+  margin-bottom: 18px;
 }
 .page-home .figure__win {
   width: 100%;

@@ -36,12 +36,38 @@
     border: 0;
     font-size: $large;
     font-weight: bold;
-    color: $white;
+    color: $yak-brownDark;
     text-align: center;
     width: 80% !important;
     margin: 0 auto;
     
 }
+
+::-webkit-input-placeholder {
+    color:    $white;
+    text-shadow: 0px 0px 20px $black;
+    opacity: 0.7;
+}
+
+:-moz-placeholder {
+    color:    $white;
+    text-shadow: 0px 0px 20px $black;
+    opacity: 0.7;
+}
+
+::-moz-placeholder {
+    color:    $white;
+    text-shadow: 0px 0px 20px $black;
+    opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+    color:    $white;
+    text-shadow: 0px 0px 20px $black;
+    opacity: 0.7;
+}
+
+
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 

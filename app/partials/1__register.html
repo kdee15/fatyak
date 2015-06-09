@@ -42,12 +42,6 @@
 
             </figure>
 
-            <figure class="figure__text">
-
-                <img src="assets/images/site/yak-text.svg" class="yak-text" />
-
-            </figure>
-
         </section>
         
         <!-- C.2.1. END ------------------------------------------------------------------------------------------- -->
@@ -115,27 +109,35 @@
 
                 <li>
                     <input type="radio" name="beer-logo" id="flavoured-ale" value="Flavoured Ale">
-                    <label for="flavoured-ale" ng-click="ale = !ale">
+                    <label for="flavoured-ale" ng-click=" viewing = 'logo8'" ng-class="{'active': viewing == 'logo8'}">
                         Flavoured Ale
                     </label>
                 </li>
 
-                <div class="field-item text" ng-show="ale">
+                <div class="field-item select-box" ng-class="{'active': viewing == 'logo8'}">
 
-                    <input type="text" class="yak-textfield" id="style-own" ng-model="beer.style" name="style-own">
+                    <select name="beerTypeSelect"
+                            ng-model="beer.style">
+                        <option value="Banana">Banana</option>
+                        <option value="Raspberry">Raspberry</option>
+                        <option value="Citrus">Citrus</option>
+                        <option value="Chilli">Chilli</option>
+                        <option value="Lychee">Lychee</option>
+                        <option value="Passionfruit">Passionfruit</option>
+                    </select>
 
                 </div>
 
                 <li>
-                    <input type="radio" name="beer-logo" id="own-style" ng-click="own = !own">
-                    <label for="own-style">
+                    <input type="radio" name="beer-logo" id="own-style" value="Own Style">
+                    <label for="own-style" ng-click=" viewing = 'logo9'" ng-class="{'active': viewing == 'logo9'}">
                         Name My Own
                     </label>
                 </li>
 
-                <div class="field-item text" ng-show="own">
+                <div class="field-item text" ng-class="{'active': viewing == 'logo9'}">
 
-                    <input type="text" class="yak-textfield" id="style-own" ng-model="beer.style">
+                    <input type="text"  Maxlength="9" class="yak-textfield" id="style-own" ng-model="beer.style" placeholder="(Max 9 characters)">
 
                 </div>
 
@@ -185,28 +187,28 @@
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="3" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="3" value="3" ng-model="beer.logo">
                     <label for="3" ng-click=" chosenLogo = 3 " ng-class="{'active': chosenLogo == 3}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__03.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="4" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="4" value="4" ng-model="beer.logo">
                     <label for="4" ng-click=" chosenLogo = 4 " ng-class="{'active': chosenLogo == 4}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__04.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="5" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="5" value="5" ng-model="beer.logo">
                     <label for="5" ng-click=" chosenLogo = 5 " ng-class="{'active': chosenLogo == 5}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__05.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="6" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="6" value="6" ng-model="beer.logo">
                     <label for="6" ng-click=" chosenLogo = 6 " ng-class="{'active': chosenLogo == 6}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__06.png" />
                     </label>
@@ -255,35 +257,35 @@
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="13" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="13" value="13" ng-model="beer.logo">
                     <label for="13" ng-click=" chosenLogo = 13 " ng-class="{'active': chosenLogo == 13}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__13.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="14" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="14" value="14" ng-model="beer.logo">
                     <label for="14" ng-click=" chosenLogo = 14 " ng-class="{'active': chosenLogo == 14}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__14.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="15" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="15" value="15" ng-model="beer.logo">
                     <label for="15" ng-click=" chosenLogo = 15 " ng-class="{'active': chosenLogo == 15}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__15.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="16" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="16" value="16" ng-model="beer.logo">
                     <label for="16" ng-click=" chosenLogo = 16 " ng-class="{'active': chosenLogo == 16}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__16.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="17" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="17" value="17" ng-model="beer.logo">
                     <label for="17" ng-click=" chosenLogo = 17 " ng-class="{'active': chosenLogo == 17}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__17.png" />
                     </label>
@@ -297,7 +299,7 @@
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="19" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="19" value="19" ng-model="beer.logo">
                     <label for="19" ng-click=" chosenLogo = 19 " ng-class="{'active': chosenLogo == 19}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__19.png" />
                     </label>
@@ -311,28 +313,28 @@
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="21" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="21" value="21" ng-model="beer.logo">
                     <label for="21" ng-click=" chosenLogo = 21 " ng-class="{'active': chosenLogo == 21}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__21.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="22" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="22" value="22" ng-model="beer.logo">
                     <label for="22" ng-click=" chosenLogo = 22 " ng-class="{'active': chosenLogo == 22}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__22.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="23" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="23" value="23" ng-model="beer.logo">
                     <label for="23" ng-click=" chosenLogo = 23 " ng-class="{'active': chosenLogo == 23}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__23.png" />
                     </label>
                 </li> 
                  
                 <li class="grid__half">
-                    <input type="radio" name="yak-head" id="24" value="2" ng-model="beer.logo">
+                    <input type="radio" name="yak-head" id="24" value="24" ng-model="beer.logo">
                     <label for="24" ng-click=" chosenLogo = 24 " ng-class="{'active': chosenLogo == 24}">
                         <img class="label__image" ng-src="assets/images/site/yak-head__24.png" />
                     </label>
@@ -374,7 +376,7 @@
 
             <div class="field-item text">
 
-                <input type="text" class="yak-textfield" id="input__beer-name" ng-model="beer.name" name="beer-name">
+                <input type="text" Maxlength="7" class="yak-textfield" id="input__beer-name" ng-model="beer.name" name="beer-name" placeholder="(Max 7 characters)">
 
             </div>
 
@@ -384,9 +386,9 @@
 
             </figure>
             
-            <p class="beer-style">{{ beer.style }} {{ beer.styleOwn }}</p>
+            <p class="beer-style">{{ beer.style }}</p>
 
-            <figure class="figure__button">
+            <figure class="figure__button done">
 
                 <button ng-click=" step = 5 " class="done button">
                     DONE
@@ -409,55 +411,63 @@
         <!-- C.2.5. BEER BOTTLE ----------------------------------------------------------------------------------- -->
         
         <section class="section-5__beer-bottle" ng-show=" step == 5 ">
-        
-            <figure class="figure__bottle">
+            
+            <section class="section__bottle">
+            
+                <div class="align">
                 
-                <div class="content">
-                    
-                    <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-neck-logo" />
+                    <figure class="figure__bottle">
 
-                    <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-lable-logo" />
+                        <div class="content">
 
-                    <p class="bottle-beer-name">{{ beer.name }}Yak</p>
+                            <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-neck-logo" />
 
-                    <p class="bottle-beer-style">{{ beer.style }}</p>
+                            <img ng-src="assets/images/yak-heads/{{ beer.logo }}.png" class="bottle-lable-logo" />
 
-                    <img class="image__bottle" src="assets/images/site/bottle.png" />
+                            <p class="bottle-beer-name">{{ beer.name }} Yak</p>
 
-                    <figure class="figure__button">
+                            <p class="bottle-beer-style">{{ beer.style }}</p>
 
-                        <button ng-click="bouForm();" class="submit button">
-                            SUBMIT MY YAK
-                        </button>
-                        
+                            <img class="image__bottle" src="assets/images/site/bottle.png" />
 
-                    </figure>
-                    
-                    <figure class="figure__button below">
+                            <figure class="figure__button">
 
-                        <button ng-click=" step = 4 " class="back button">
-                            BACK
-                        </button>
+                                <button ng-click="bouForm();" class="submit button">
+                                    SUBMIT MY YAK
+                                </button>
+
+                            </figure>
+
+                            <figure class="figure__button below">
+
+                                <button ng-click=" step = 4 " class="back button">
+                                    BACK
+                                </button>
+
+                            </figure>
+
+                        </div>
 
                     </figure>
                 
                 </div>
-
-            </figure>
+            
+            </section>
             
             <section class="yaksess" ng-class="{ 'active': active }">
             
-                <h1>You have successfully sumbitted your Yak</h1>
+                <h1>You have successfully submitted your Yak</h1>
             
             </section>
         
         </section>
+        
         <!-- C.2.5. END ------------------------------------------------------------------------------------------- -->
 
     </form>
 
 </section>
 
-<!-- C.2. END ------------------------------------------------------------------------------------------------- -->
+<!-- C.2. END ----------------------------------------------------------------------------------------------------- -->
 
 <!-- 1. END ======================================================================================================= -->
